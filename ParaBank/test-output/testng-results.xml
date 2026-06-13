@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-13T10:15:17 IST" name="ParaBank Automation Suite" finished-at="2026-06-13T10:16:19 IST" duration-ms="61564">
+    <groups>
+    </groups>
+    <test started-at="2026-06-13T10:15:17 IST" name="Registration Tests" finished-at="2026-06-13T10:15:34 IST" duration-ms="16928">
+      <class name="testcases.RegistrationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegistrationTest@6e2aa843]" started-at="2026-06-13T10:15:17 IST" name="setup" finished-at="2026-06-13T10:15:26 IST" duration-ms="9464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerUser()[pri:0, instance:testcases.RegistrationTest@6e2aa843]" started-at="2026-06-13T10:15:27 IST" name="registerUser" finished-at="2026-06-13T10:15:32 IST" duration-ms="5228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@6e2aa843]" started-at="2026-06-13T10:15:32 IST" name="tearDown" finished-at="2026-06-13T10:15:34 IST" duration-ms="2115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.RegistrationTest -->
+    </test> <!-- Registration Tests -->
+    <test started-at="2026-06-13T10:15:35 IST" name="Login Tests" finished-at="2026-06-13T10:15:44 IST" duration-ms="9426">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@33f676f6]" started-at="2026-06-13T10:15:35 IST" name="setup" finished-at="2026-06-13T10:15:38 IST" duration-ms="2864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:testcases.LoginTest@33f676f6]" started-at="2026-06-13T10:15:38 IST" name="loginTest" finished-at="2026-06-13T10:15:44 IST" duration-ms="5963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@33f676f6]" started-at="2026-06-13T10:15:44 IST" name="tearDown" finished-at="2026-06-13T10:15:44 IST" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Login Tests -->
+    <test started-at="2026-06-13T10:15:45 IST" name="Account Overview Tests" finished-at="2026-06-13T10:15:51 IST" duration-ms="6834">
+      <class name="testcases.AccountOverviewTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AccountOverviewTest@48c35007]" started-at="2026-06-13T10:15:45 IST" name="setup" finished-at="2026-06-13T10:15:48 IST" duration-ms="3688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="accountOverviewTest()[pri:0, instance:testcases.AccountOverviewTest@48c35007]" started-at="2026-06-13T10:15:48 IST" name="accountOverviewTest" finished-at="2026-06-13T10:15:51 IST" duration-ms="2451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountOverviewTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccountOverviewTest@48c35007]" started-at="2026-06-13T10:15:51 IST" name="tearDown" finished-at="2026-06-13T10:15:51 IST" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AccountOverviewTest -->
+    </test> <!-- Account Overview Tests -->
+    <test started-at="2026-06-13T10:15:51 IST" name="Transfer Funds Tests" finished-at="2026-06-13T10:16:02 IST" duration-ms="10882">
+      <class name="testcases.TransferFundsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TransferFundsTest@b40bb6e]" started-at="2026-06-13T10:15:51 IST" name="setup" finished-at="2026-06-13T10:15:56 IST" duration-ms="4331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="transferFundsTest()[pri:0, instance:testcases.TransferFundsTest@b40bb6e]" started-at="2026-06-13T10:15:56 IST" name="transferFundsTest" finished-at="2026-06-13T10:16:02 IST" duration-ms="6171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferFundsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TransferFundsTest@b40bb6e]" started-at="2026-06-13T10:16:02 IST" name="tearDown" finished-at="2026-06-13T10:16:02 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TransferFundsTest -->
+    </test> <!-- Transfer Funds Tests -->
+    <test started-at="2026-06-13T10:16:02 IST" name="Bill Pay Tests" finished-at="2026-06-13T10:16:19 IST" duration-ms="16069">
+      <class name="testcases.BillPayTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.BillPayTest@34a75079]" started-at="2026-06-13T10:16:02 IST" name="setup" finished-at="2026-06-13T10:16:07 IST" duration-ms="4777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="billPayTest()[pri:0, instance:testcases.BillPayTest@34a75079]" started-at="2026-06-13T10:16:07 IST" name="billPayTest" finished-at="2026-06-13T10:16:17 IST" duration-ms="9507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billPayTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BillPayTest@34a75079]" started-at="2026-06-13T10:16:17 IST" name="tearDown" finished-at="2026-06-13T10:16:19 IST" duration-ms="1773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.BillPayTest -->
+    </test> <!-- Bill Pay Tests -->
+  </suite> <!-- ParaBank Automation Suite -->
+</testng-results>
