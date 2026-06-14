@@ -27,36 +27,45 @@ public class BillPayPage {
     By sendPayment =
             By.xpath("//input[@value='Send Payment']");
 
-    public void payBill() {
+    public void payBill(
+            String payeeNameValue,
+            String addressValue,
+            String cityValue,
+            String stateValue,
+            String zipCodeValue,
+            String phoneValue,
+            String accountValue,
+            String verifyAccountValue,
+            String amountValue) {
 
         driver.findElement(billPayLink).click();
 
         driver.findElement(payeeName)
-              .sendKeys("Electricity Board");
+              .sendKeys(payeeNameValue);
 
         driver.findElement(address)
-              .sendKeys("Jyendra nagar");
+              .sendKeys(addressValue);
 
         driver.findElement(city)
-              .sendKeys("Mahoba");
+              .sendKeys(cityValue);
 
         driver.findElement(state)
-              .sendKeys("UP");
+              .sendKeys(stateValue);
 
         driver.findElement(zipCode)
-              .sendKeys("210421");
+              .sendKeys(zipCodeValue);
 
         driver.findElement(phone)
-              .sendKeys("7080852802");
+              .sendKeys(phoneValue);
 
         driver.findElement(account)
-              .sendKeys("12345");
+              .sendKeys(accountValue);
 
         driver.findElement(verifyAccount)
-              .sendKeys("12345");
+              .sendKeys(verifyAccountValue);
 
         driver.findElement(amount)
-              .sendKeys("500");
+              .sendKeys(amountValue);
 
         driver.findElement(sendPayment)
               .click();

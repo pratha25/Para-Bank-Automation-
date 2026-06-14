@@ -14,10 +14,16 @@ public class LoginTest extends BaseTest {
     public void loginTest() throws InterruptedException {
 
         String username =
-                ExcelUtils.getData(2, 0);
+        		ExcelUtils.getData(
+        		        "LoginData",
+        		       1,
+        		        0);
 
         String password =
-                ExcelUtils.getData(2, 1);
+        		ExcelUtils.getData(
+        		        "LoginData",
+        		        1,
+        		        1);
 
         System.out.println("Username = " + username);
         System.out.println("Password = " + password);

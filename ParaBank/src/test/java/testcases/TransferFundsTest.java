@@ -16,13 +16,27 @@ public class TransferFundsTest extends BaseTest {
 	            new LoginPage(driver);
 
 	    loginPage.login(
-	            ExcelUtils.getData(2,0),
-	            ExcelUtils.getData(2,1));
+	    		ExcelUtils.getData(
+	    	            "LoginData",
+	    	            1,
+	    	            0),
+
+	    	    ExcelUtils.getData(
+	    	            "LoginData",
+	    	            1,
+	    	            1));
 
 	    TransferFundsPage transferPage =
 	            new TransferFundsPage(driver);
 
-	    transferPage.transferFunds("100");
+	    transferPage.transferFunds(
+
+	    	    ExcelUtils.getData(
+	    	            "TransferData",
+	    	            1,
+	    	            0)
+
+	    	);
 
 	    Thread.sleep(3000);
 

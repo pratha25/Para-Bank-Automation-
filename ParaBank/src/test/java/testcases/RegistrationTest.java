@@ -15,18 +15,41 @@ public class RegistrationTest extends BaseTest {
         driver.get("https://parabank.parasoft.com/parabank/register.htm");
 
         String username = RandomDataGenerator.getUsername();
-        String password = "Test123";
+        String password =
+                ExcelUtils.getData(
+                        "RegistrationData",
+                        1,
+                        8);
 
         RegistrationPage reg = new RegistrationPage(driver);
-
         reg.registerUser(
-                "Pratha",
-                "Khare",
-                username,
-                password);
 
-        ExcelUtils.writeData(2, 0, username);
-        ExcelUtils.writeData(2, 1, password);
+                ExcelUtils.getData(
+                        "RegistrationData",
+                        1,
+                        0),
+
+                ExcelUtils.getData(
+                        "RegistrationData",
+                        1,
+                        1),
+
+                username,
+
+                password
+        );
+
+        ExcelUtils.writeData(
+                "LoginData",
+                1,
+                0,
+                username);
+
+        ExcelUtils.writeData(
+                "LoginData",
+                1,
+                1,
+                password);
 
         System.out.println("Saved Username : " + username);
         System.out.println("Saved Password : " + password);

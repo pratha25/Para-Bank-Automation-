@@ -19,7 +19,11 @@
             <class name="testcases.LoginTest"/>
         </classes>
     </test>
-
+ <test name="Open Account Tests">
+        <classes>
+            <class name="testcases.OpenAccountTest"/>
+        </classes>
+    </test>
     <test name="Account Overview Tests">
         <classes>
             <class name="testcases.AccountOverviewTest"/>
