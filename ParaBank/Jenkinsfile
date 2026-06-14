@@ -24,7 +24,7 @@ pipeline {
  
         stage('Run Tests') {
             steps {
-                dir('ParaBankAutomationFramework') {
+                dir('ParaBank') {
                     bat 'mvn test'
                 }
             }
