@@ -16,11 +16,22 @@ public class BaseTest {
     protected WebDriver driver;
 
     @BeforeMethod
-    public void setup() {
+   public void setup() {
 
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
 
-        driver.manage().window().maximize();
+        String docker =
+                System.getProperty("docker");
+
+        if("true".equalsIgnoreCase(docker)) {
+
+            options.addArguments("--headless=new");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");
+        }
+
+        driver = new ChromeDriver(options);
 
         driver.manage().timeouts()
               .implicitlyWait(Duration.ofSeconds(10));
